@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: ubuntu;
+}
+body{
+	background: #ecf0f1;
+	overflow-x: hidden;
+	background-image: url("https://purelifi.com/wp-content/uploads/2019/02/AdobeStock_118793641.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+.container{
+	width: 360px;
+	height: 400px;
+	margin: 10% auto;
+	background: #fff;
+	border-bottom-right-radius:40px;
+	position: relative;
+	overflow: hidden;  
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h3{
+	text-align: center;
+	margin-bottom:50px;
+	color: #777;
+}
+.container form {
+	width: 280px;
+	position:absolute;
+	top: 100px;
+	left: 30px;
+}
+form input{
+	width: 100%;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #999;
+	background: transparent;
+}
+::placeholder{
+	color: #777;
+}
+.btn-box{
+	width: 100%;
+	text-align: center;
+	margin: 30px auto;
+}
+form button{
+	width: 110px;
+	height: 35px;
+	background: #e96443;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	outline: none;
+	border:0;
+	font-weight: 600;
+	border-radius: 30px;
+}
+#Form2{
+	left: 400px;
+}
+#Form3{
+	left: -400px;
+}
+.step-row{
+	width: 360px;
+	height: 40px;
+	margin: 5 auto;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #ecf0f1;
+	position: relative;
+}
+.step-col{
+	width: 120px;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+#progress{
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: #e96443;  /* fallback for old browsers */	
+	background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition: 1s;
+}
+#progress::after{
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid #e96443;	
+}
